@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         minlength: [4, 'Password is too short']
     },
-    phone: {type:Number},
+    phone: {type:String},
     country:{type:String},
     city: {type:String},
     postcode: {type:Number},
