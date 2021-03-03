@@ -7,7 +7,7 @@ class authJwt {
         if (!token){
             throw ({ name : 'MISSING TOKEN'});
         }
-        jwt.verify(token, config.secret, (err,decoded)=>{
+        jwt.verify(token, "Shopping", (err,decoded)=>{
             if(err){
                 throw ({ name : 'INVALID TOKEN'});
             }
